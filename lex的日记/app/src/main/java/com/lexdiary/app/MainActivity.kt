@@ -401,7 +401,7 @@ private fun EditorPage(
                         }
                     }
                 }
-            )
+            ) {}
             photos.forEach { photo ->
                 val bitmap = remember(photo.path) { runCatching { BitmapFactory.decodeFile(photo.path)?.asImageBitmap() }.getOrNull() }
                 if (bitmap != null) {
